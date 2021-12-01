@@ -1,5 +1,9 @@
 package santa.claus.delivery;
 
+import org.acme.commons.Present;
+import org.acme.logistics.Sleigh;
+import org.acme.logistics.SleighLoader;
+
 import java.util.List;
 
 public class RudolphsSleighLoader implements SleighLoader {

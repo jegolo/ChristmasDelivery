@@ -1,4 +1,6 @@
-package santa.claus.delivery;
+package org.acme.logistics;
+
+import org.acme.commons.Present;
 
 import java.util.List;
 

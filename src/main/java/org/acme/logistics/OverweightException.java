@@ -1,4 +1,4 @@
-package santa.claus.delivery;
+package org.acme.logistics;
 
 public class OverweightException extends Exception  {
 }

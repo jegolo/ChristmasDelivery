@@ -1,4 +1,4 @@
-package santa.claus.delivery;
+package org.acme.commons;
 
 public record Present (int weight) {
 }
