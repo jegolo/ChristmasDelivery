@@ -16,7 +16,7 @@ public class Sleigh {
     }
 
     public void pack(Present present) throws OverweightException {
-        if (currentWeight() + present.weight() <= maxWeight) {
+        if (restCapacity() >= present.weight()) {
             presents.add(present);
         } else {
             throw new OverweightException();
@@ -24,7 +24,14 @@ public class Sleigh {
     }
 
     public int currentWeight() {
-       return presents.stream().mapToInt(Present::weight).sum();
+        return presents.stream().mapToInt(Present::weight).sum();
     }
 
+    public List<Present> getPresents() {
+        return presents;
+    }
+
+    public int restCapacity() {
+        return maxWeight - currentWeight() ;
+    }
 }

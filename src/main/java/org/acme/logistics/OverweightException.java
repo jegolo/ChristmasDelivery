@@ -1,4 +1,4 @@
 package org.acme.logistics;
 
-public class OverweightException extends Exception  {
+public class OverweightException extends RuntimeException  {
 }

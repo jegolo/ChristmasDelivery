@@ -9,7 +9,7 @@ import java.util.List;
 public class RudolphsSleighLoader implements SleighLoader {
 
     @Override
-    public void packSleigh(Sleigh s, List<Present> pl) {
+    public List<Present> packSleigh(Sleigh s, List<Present> pl) {
         var i = pl.iterator();
         do {
             var p = i.next();
@@ -19,6 +19,7 @@ public class RudolphsSleighLoader implements SleighLoader {
                 // Grrh!!
             }
         } while (i.hasNext());
+        return null;
     }
 
 }

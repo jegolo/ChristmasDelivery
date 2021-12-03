@@ -6,6 +6,12 @@ import java.util.List;
 
 public interface SleighLoader {
 
-    void packSleigh(Sleigh sleigh, List<Present> presents);
+    /**
+     * Pack presents on sleigh.
+     * @param sleigh the sleigh.
+     * @param presents the presents which must carried
+     * @return the rest which doesn't fit on the sleigh.
+     */
+    List<Present> packSleigh(Sleigh sleigh, List<Present> presents);
 
 }
